@@ -13,7 +13,6 @@ from rdkit.Chem import Draw
 
 from jtnn import *
 # from ../jtnn import *
-import csv ###!
 
 lg = rdkit.RDLogger.logger() 
 lg.setLevel(rdkit.RDLogger.CRITICAL)
@@ -47,14 +46,6 @@ model.load_state_dict(load_dict)
 
 torch.manual_seed(0)
 # for i in xrange(nsample):
-
-myFile = open("10_molecules.csv", 'w')
-with myFile:
-    writer = csv.writer(myFile)
-    writer.writerow(['smiles']) 
-    for i in range(nsample):
-#         print model.sample_prior(prob_decode=False)
-        smiles = model.sample_prior(prob_decode=False)
-        writer.writerow([smiles])
-        print(smiles)
-print('writed csv')
+for i in range(nsample):
+    #print model.sample_prior(prob_decode=False)
+    print (model.sample_prior(prob_decode=False))

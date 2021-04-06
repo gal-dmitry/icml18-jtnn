@@ -1,3 +1,5 @@
+# import sys
+# print(sys.path)
 from mol_tree import Vocab, MolTree
 from jtnn_vae import JTNNVAE
 from jtprop_vae import JTPropVAE
