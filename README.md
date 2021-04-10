@@ -9,3 +9,4 @@ python sample.py --nsample 10 --vocab ../data/zinc/vocab.txt --hidden 450 --dept
 6. В sample.py добавлена запись smiles-результатов в файл "10_molecules.csv" в папку "molvae"
 7. Ноутбук с визуализацией сгенерированных молекул: "Visualise_10_molecules.ipynb" 
 8. Сохраненные картинки - в папке "images"
+9. screenshot.png - скриншот запуска генерации молекул
